@@ -1,11 +1,9 @@
-# Wizards of Worderly Place - README
-
-## Overview
+## 👀 Overview
 **Wizards of Worderly Place** is a terminal-based word puzzle game where players guess words formed from a given set of letters. The game features a dynamically generated crossword puzzle grid centered around a 6-letter word, with additional words intersecting it. Players earn points by revealing hidden words while managing limited lives.
 
 ---
 
-## Features
+## 👀 Features
 ### Core Gameplay
 - **Dynamic Puzzle Generation**: A 15x25 grid is generated with a 6-letter word placed diagonally in the center, surrounded by 20+ intersecting words.
 - **Word Guessing**: Players guess words using shuffled letters from the base word.
