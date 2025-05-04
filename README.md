@@ -1,11 +1,12 @@
-## 👀 Overview
+# 🔮 Wizards of Worderly Place 🔮
+## 💥 Overview 💥
 **Wizards of Worderly Place** is a terminal-based word puzzle game where players guess words formed from a given set of letters. The game features a dynamically generated crossword puzzle grid centered around a 6-letter word, with additional words intersecting it. Players earn points by revealing hidden words while managing limited lives.
 
 ---
 
-## 👀 Features
+## Features
 ### Core Gameplay
-- **Dynamic Puzzle Generation**: A 15x25 grid is generated with a 6-letter word placed diagonally in the center, surrounded by 20+ intersecting words.
+- **Puzzle Generation**: A 15x25 grid is generated with a 6-letter word placed diagonally in the center, surrounded by 20+ intersecting words.
 - **Word Guessing**: Players guess words using shuffled letters from the base word.
 - **Scoring**: Earn 1 point per revealed letter. Bonus points for remaining lives upon completion.
 - **Lives System**: 5 lives are deducted for invalid guesses.
@@ -14,13 +15,13 @@
 - **Main Menu**: Start game, view leaderboard, reset leaderboard, or exit.
 - **Leaderboard**: Tracks top scores persistently across sessions.
 - **Colored Terminal UI**: Enhanced visuals using `termcolor`.
-- **Input Validation**: Handles invalid guesses gracefully.
+- **Input Validation**: Handles invalid guesses.
 
 ---
 
 ## Installation
 ### Prerequisites
-- Python 3.x
+- Python 3 !
 - `termcolor` library (install via `pip` if not present).
 
 ### Steps
@@ -32,13 +33,9 @@
    ```bash
    pip install -r requirements.txt
    ```
-3. Run the game:
+3. Run the game: (must have a word list file)
    ```bash
-   python3 worderly.py
-   ```
-   *Optional*: Specify a custom word list file:
-   ```bash
-   python3 worderly.py custom_lexicon.txt
+   python3 worderly.py corncob-lowercase.txt
    ```
 
 ---
@@ -72,7 +69,7 @@
 ## Testing
 Run unit tests to verify functionality:
 ```bash
-pytest improved_tests.py
+pytest test_worderly.py
 ```
 **Test Coverage**:
 - File handling (e.g., loading lexicons).
@@ -89,23 +86,5 @@ pytest improved_tests.py
 
 ---
 
-## Example Gameplay
-1. **Start**:
-   ```
-   Letters: R T A S E E
-   Lives: 5 | Points: 0
-   Enter guess: tease
-   ```
-2. **Correct Guess**:
-   - Letters in "tease" are revealed.
-   - Points increase by 5 (1 per letter).
-3. **Game Over**:
-   - Final score and leaderboard prompt displayed.
-
----
-
-## Notes
-- The default lexicon file (`corncob-lowercase.txt`) must be in the same directory.
-- For debugging, set `max_attempts` in `generate_puzzle()` to a higher value.
-
-Enjoy the magic of words! ✨
+## Acknowledgements 
+- Python Library
